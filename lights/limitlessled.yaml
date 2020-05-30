@@ -1,0 +1,17 @@
+platform: limitlessled
+bridges:
+  - host: !secret ip_limitlessled
+    groups:
+    - number: 1
+      type: rgbww
+      name: Kaden's Light
+    - number: 2
+      name: Emma's Light
+      type: rgbww
+  - host: !secret ip_limitlessled_2
+    version: 6
+    port: 5987
+    groups:
+    - number: 1
+      type: bridge-led
+      name: Office Ambient Light

@@ -1,0 +1,29 @@
+- id: '1590626755835'
+  alias: Turn on TV Light with TV
+  description: ''
+  trigger:
+  - entity_id: media_player.living_room
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - brightness_pct: 5
+    device_id: b9e74a7a991e477fb79c9f414a6a35f8
+    domain: light
+    entity_id: light.tv_light
+    type: turn_on
+- id: '1590626926901'
+  alias: Turn off TV Light with TV
+  description: ''
+  trigger:
+  - entity_id: media_player.living_room
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - device_id: b9e74a7a991e477fb79c9f414a6a35f8
+    domain: light
+    entity_id: light.tv_light
+    type: turn_off

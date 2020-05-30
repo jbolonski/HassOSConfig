@@ -1,0 +1,6 @@
+platform: flux_led
+devices:
+  192.168.1.166:
+    name: Office Monitor Light
+  192.168.1.144:
+    name: flux_144
