@@ -1,0 +1,4 @@
+- platform: ping
+  name: OctoPi
+  host: 192.168.1.56
+  scan_interval: 5

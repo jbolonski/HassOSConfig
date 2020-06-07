@@ -27,3 +27,66 @@
     domain: light
     entity_id: light.tv_light
     type: turn_off
+- id: '1591457528648'
+  alias: Turn on Garage Light
+  description: ''
+  trigger:
+  - device_id: ee13f1984c984fdaa0dfbbac89d25765
+    domain: binary_sensor
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor
+    platform: device
+    type: turned_on
+  condition: []
+  action:
+  - device_id: 9607f206efeb4409b990015c62cbd9e4
+    domain: switch
+    entity_id: switch.wemo_mini_61
+    type: turn_on
+- id: '1591457599212'
+  alias: Turn Off Garage Light
+  description: If the motion is idle then turn off the garage light
+  trigger:
+  - device_id: ee13f1984c984fdaa0dfbbac89d25765
+    domain: binary_sensor
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    platform: device
+    type: turned_off
+  condition: []
+  action:
+  - device_id: 9607f206efeb4409b990015c62cbd9e4
+    domain: switch
+    entity_id: switch.wemo_mini_61
+    type: turn_off
+- id: '1591493584249'
+  alias: 3d Printer Lighting Area On
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.octopi
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - brightness_pct: 100
+    device_id: f07bd092736a402c9da115c805b19b06
+    domain: light
+    entity_id: light.osram_lightify_a19_on_off_dim_a805a000_level_on_off
+    type: turn_on
+- id: '1591493639035'
+  alias: 3d Printer Lighting Area Off
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.octopi
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - device_id: f07bd092736a402c9da115c805b19b06
+    domain: light
+    entity_id: light.osram_lightify_a19_on_off_dim_a805a000_level_on_off
+    type: turn_off

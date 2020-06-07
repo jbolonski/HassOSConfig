@@ -14,6 +14,7 @@ binary_sensor: !include_dir_merge_list binary_sensors
 sensor: !include_dir_merge_list sensors
 light: !include_dir_list lights
 camera: !include_dir_list cameras
+switch: !include_dir_list switches
 
 logger:
   default: info
