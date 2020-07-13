@@ -1,0 +1,4 @@
+- platform: rest
+  name: River Water Flow
+  resource: https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01472000&parameterCd=00060&siteStatus=all
+  value_template: '{{ value_json.value.timeSeries[0]["values"][0]["value"][0]["value"] }}'

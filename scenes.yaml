@@ -1,0 +1,210 @@
+- id: '1591694713975'
+  name: Game Room Lights On
+  entities:
+    light.hue_play_office_1:
+      brightness: 255
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue play office 1
+      hs_color:
+      - 10
+      - 94.118
+      icon: mdi:television-ambient-light
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 54
+      - 14
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.68
+      - 0.313
+    light.hue_play_office_2:
+      brightness: 255
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue play office 2
+      hs_color:
+      - 13.228
+      - 99.608
+      icon: mdi:television-ambient-light
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 56
+      - 0
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.682
+      - 0.315
+    light.main_office_lamp:
+      brightness: 255
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Main Office Lamp
+      hs_color:
+      - 10
+      - 94.118
+      icon: mdi:wall-sconce-flat
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 54
+      - 14
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.68
+      - 0.313
+    light.office_ambient_light:
+      assumed_state: true
+      brightness: 255
+      effect_list:
+      - colorloop
+      - night
+      - white
+      friendly_name: Office Ambient Light
+      state: 'on'
+      supported_features: 61
+    light.office_monitor_light:
+      brightness: 255
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      friendly_name: Office Monitor Light
+      hs_color:
+      - 0
+      - 100
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      state: 'on'
+      supported_features: 151
+      white_value: 0
+      xy_color:
+      - 0.701
+      - 0.299
+    switch.wemo_mini_866:
+      friendly_name: Office Desk Underlight
+      icon: mdi:led-strip-variant
+      state: 'on'
+    switch.wemo_mini_9c0:
+      friendly_name: Office Floor Lights
+      icon: mdi:track-light
+      state: 'on'
+- id: '1591694971057'
+  name: Game Room Lights Off
+  entities:
+    light.hue_play_office_1:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue play office 1
+      icon: mdi:television-ambient-light
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.hue_play_office_2:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue play office 2
+      icon: mdi:television-ambient-light
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.main_office_lamp:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Main Office Lamp
+      icon: mdi:wall-sconce-flat
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.office_ambient_light:
+      assumed_state: true
+      brightness: 255
+      effect_list:
+      - colorloop
+      - night
+      - white
+      friendly_name: Office Ambient Light
+      state: 'on'
+      supported_features: 61
+    light.office_monitor_light:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      friendly_name: Office Monitor Light
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 151
+    switch.stream_light:
+      friendly_name: Stream Light
+      icon: mdi:track-light
+      state: 'off'
+    switch.wemo_mini_866:
+      friendly_name: Office Desk Underlight
+      icon: mdi:led-strip-variant
+      state: 'off'
+    switch.wemo_mini_9c0:
+      friendly_name: Office Floor Lights
+      icon: mdi:track-light
+      state: 'off'

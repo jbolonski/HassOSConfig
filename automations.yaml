@@ -90,3 +90,41 @@
     domain: light
     entity_id: light.osram_lightify_a19_on_off_dim_a805a000_level_on_off
     type: turn_off
+- id: '1591695103632'
+  alias: Game Room Lighting
+  description: Turn on Game Room lighting
+  trigger:
+  - entity_id: binary_sensor.gaming_computer_state
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - scene: scene.game_room_lights
+- id: '1591695199791'
+  alias: Gaming Room Lighting Off
+  description: Turn off lighting
+  trigger:
+  - entity_id: binary_sensor.gaming_computer_state
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - scene: scene.game_room_lights_off
+- id: '1591898243025'
+  alias: Camera Alert
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: ispy/camera/alert
+  condition: []
+  action:
+  - device_id: 9541466382414cabb3aa4cdebda1233d
+    domain: switch
+    entity_id: switch.stream_light
+    type: toggle
+  - device_id: 9541466382414cabb3aa4cdebda1233d
+    domain: switch
+    entity_id: switch.stream_light
+    type: toggle
