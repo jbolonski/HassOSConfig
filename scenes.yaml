@@ -1,174 +1,2900 @@
 - id: '1591694713975'
-  name: Game Room Lights On
+  name: Game Lighting
   entities:
     light.hue_play_office_1:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
       brightness: 255
-      effect: none
-      effect_list:
-      - colorloop
-      - random
+      hs_color:
+      - 345.251
+      - 70.196
+      rgb_color:
+      - 255
+      - 76
+      - 120
+      xy_color:
+      - 0.575
+      - 0.275
+      mode: normal
+      dynamics: none
       friendly_name: Hue play office 1
-      hs_color:
-      - 10
-      - 94.118
-      icon: mdi:television-ambient-light
-      max_mireds: 500
-      min_mireds: 153
-      rgb_color:
-      - 255
-      - 54
-      - 14
+      supported_features: 40
       state: 'on'
-      supported_features: 63
-      xy_color:
-      - 0.68
-      - 0.313
     light.hue_play_office_2:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
       brightness: 255
-      effect: none
-      effect_list:
-      - colorloop
-      - random
+      hs_color:
+      - 219.588
+      - 76.078
+      rgb_color:
+      - 61
+      - 127
+      - 255
+      xy_color:
+      - 0.1555
+      - 0.1366
+      mode: normal
+      dynamics: none
       friendly_name: Hue play office 2
-      hs_color:
-      - 13.228
-      - 99.608
-      icon: mdi:television-ambient-light
-      max_mireds: 500
-      min_mireds: 153
-      rgb_color:
-      - 255
-      - 56
-      - 0
+      supported_features: 40
       state: 'on'
-      supported_features: 63
-      xy_color:
-      - 0.682
-      - 0.315
     light.main_office_lamp:
-      brightness: 255
-      effect: none
-      effect_list:
-      - colorloop
-      - random
-      friendly_name: Main Office Lamp
-      hs_color:
-      - 10
-      - 94.118
-      icon: mdi:wall-sconce-flat
-      max_mireds: 500
       min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 135
+      hs_color:
+      - 164.941
+      - 100
       rgb_color:
+      - 0
       - 255
-      - 54
-      - 14
-      state: 'on'
-      supported_features: 63
+      - 191
       xy_color:
-      - 0.68
-      - 0.313
+      - 0.157
+      - 0.457
+      mode: normal
+      dynamics: none
+      friendly_name: Main Office Lamp
+      supported_features: 40
+      state: 'on'
     light.office_ambient_light:
-      assumed_state: true
-      brightness: 255
       effect_list:
       - colorloop
       - night
       - white
-      friendly_name: Office Ambient Light
-      state: 'on'
-      supported_features: 61
-    light.office_monitor_light:
+      supported_color_modes:
+      - hs
+      color_mode: unknown
       brightness: 255
-      effect_list:
-      - blue_fade
-      - blue_strobe
-      - colorjump
-      - colorloop
-      - colorstrobe
-      - cyan_fade
-      - cyan_strobe
-      - gb_cross_fade
-      - green_fade
-      - green_strobe
-      - purple_fade
-      - purple_strobe
-      - rb_cross_fade
-      - red_fade
-      - red_strobe
-      - rg_cross_fade
-      - white_fade
-      - white_strobe
-      - yellow_fade
-      - yellow_strobe
-      - random
-      friendly_name: Office Monitor Light
-      hs_color:
-      - 0
-      - 100
-      max_mireds: 500
-      min_mireds: 153
-      rgb_color:
-      - 255
-      - 0
-      - 0
+      assumed_state: true
+      friendly_name: Office Ambient Light
+      supported_features: 61
       state: 'on'
-      supported_features: 151
-      white_value: 0
-      xy_color:
-      - 0.701
-      - 0.299
     switch.wemo_mini_866:
-      friendly_name: Office Desk Underlight
       icon: mdi:led-strip-variant
+      friendly_name: Office Desk Underlight
       state: 'on'
     switch.wemo_mini_9c0:
-      friendly_name: Office Floor Lights
       icon: mdi:track-light
+      friendly_name: Office Background Lights
       state: 'on'
+    light.lamp:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 31
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP
+      supported_features: 36
+      state: 'on'
+    switch.lamp_nightlight:
+      duration: 60
+      fade: true
+      target_brightness: 0
+      icon: mdi:weather-night
+      friendly_name: LAMP Nightlight
+      state: 'off'
+    switch.lamp_sync_send:
+      udp_port: 21324
+      icon: mdi:upload-network-outline
+      friendly_name: LAMP Sync Send
+      state: 'off'
+    switch.lamp_sync_receive:
+      udp_port: 21324
+      icon: mdi:download-network-outline
+      friendly_name: LAMP Sync Receive
+      state: 'on'
+    light.lamp_segment_1:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 28
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 1
+      supported_features: 36
+      state: 'on'
+    light.lamp_master:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 65
+      icon: mdi:lava-lamp
+      friendly_name: LAMP Master
+      supported_features: 32
+      state: 'on'
+    light.lamp_segment_2:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 33
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 2
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_3:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 3
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_4:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 4
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_5:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 87
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 5
+      supported_features: 36
+      state: 'on'
+    switch.office_floor_light:
+      icon: mdi:spotlight-beam
+      friendly_name: Office Floor Light
+      state: 'on'
+    select.lamp_preset:
+      options:
+      - Flash-Red
+      - Solid-dim-white
+      - lamp-default
+      icon: mdi:playlist-play
+      friendly_name: LAMP Preset
+      state: Solid-dim-white
+    switch.stream_hair_light:
+      friendly_name: Stream Hair Light
+      state: 'off'
+  icon: mdi:google-controller
 - id: '1591694971057'
   name: Game Room Lights Off
   entities:
     light.hue_play_office_1:
-      effect_list:
-      - colorloop
-      - random
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      mode: normal
+      dynamics: none
       friendly_name: Hue play office 1
-      icon: mdi:television-ambient-light
-      max_mireds: 500
-      min_mireds: 153
+      supported_features: 40
       state: 'off'
-      supported_features: 63
     light.hue_play_office_2:
-      effect_list:
-      - colorloop
-      - random
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      mode: normal
+      dynamics: none
       friendly_name: Hue play office 2
-      icon: mdi:television-ambient-light
-      max_mireds: 500
-      min_mireds: 153
+      supported_features: 40
       state: 'off'
-      supported_features: 63
     light.main_office_lamp:
-      effect_list:
-      - colorloop
-      - random
-      friendly_name: Main Office Lamp
-      icon: mdi:wall-sconce-flat
-      max_mireds: 500
       min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      mode: normal
+      dynamics: none
+      friendly_name: Main Office Lamp
+      supported_features: 40
       state: 'off'
-      supported_features: 63
     light.office_ambient_light:
-      assumed_state: true
-      brightness: 255
       effect_list:
       - colorloop
       - night
       - white
+      supported_color_modes:
+      - hs
+      color_mode: unknown
+      brightness: 255
+      assumed_state: true
       friendly_name: Office Ambient Light
-      state: 'on'
       supported_features: 61
+      state: 'on'
+    switch.stream_light:
+      icon: mdi:track-light
+      friendly_name: Stream Light
+      state: 'off'
+    switch.wemo_mini_866:
+      icon: mdi:led-strip-variant
+      friendly_name: Office Desk Underlight
+      state: 'off'
+    switch.wemo_mini_9c0:
+      icon: mdi:track-light
+      friendly_name: Office Background Lights
+      state: 'off'
+    light.lamp:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 200
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      effect: Percent
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP
+      supported_features: 36
+      state: 'on'
+    switch.lamp_nightlight:
+      duration: 60
+      fade: true
+      target_brightness: 0
+      icon: mdi:weather-night
+      friendly_name: LAMP Nightlight
+      state: 'off'
+    switch.lamp_sync_send:
+      udp_port: 21324
+      icon: mdi:upload-network-outline
+      friendly_name: LAMP Sync Send
+      state: 'off'
+    switch.lamp_sync_receive:
+      udp_port: 21324
+      icon: mdi:download-network-outline
+      friendly_name: LAMP Sync Receive
+      state: 'on'
+    light.lamp_segment_1:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 28
+      hs_color:
+      - 223.294
+      - 100
+      rgb_color:
+      - 0
+      - 71
+      - 255
+      xy_color:
+      - 0.137
+      - 0.072
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 1
+      supported_features: 36
+      state: 'on'
+    light.lamp_master:
+      supported_color_modes:
+      - brightness
+      icon: mdi:lava-lamp
+      friendly_name: LAMP Master
+      supported_features: 32
+      state: 'off'
+    light.lamp_segment_2:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 33
+      hs_color:
+      - 240
+      - 100
+      rgb_color:
+      - 0
+      - 0
+      - 255
+      xy_color:
+      - 0.136
+      - 0.04
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 2
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_3:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 3
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_4:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 4
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_5:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 87
+      hs_color:
+      - 120
+      - 100
+      rgb_color:
+      - 0
+      - 255
+      - 0
+      xy_color:
+      - 0.172
+      - 0.747
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 5
+      supported_features: 36
+      state: 'on'
+    switch.office_floor_light:
+      icon: mdi:spotlight-beam
+      friendly_name: Office Floor Light
+      state: 'off'
+    switch.wemo_mini_280:
+      icon: mdi:floor-lamp
+      friendly_name: Basement Light
+      state: 'off'
+    switch.stream_hair_light:
+      friendly_name: Stream Hair Light
+      state: 'off'
+  icon: mdi:google-controller-off
+- id: '1613404381074'
+  name: Work Lighting
+  entities:
+    light.main_office_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 145
+      hs_color:
+      - 12
+      - 3.922
+      rgb_color:
+      - 255
+      - 247
+      - 245
+      xy_color:
+      - 0.332
+      - 0.33
+      mode: normal
+      dynamics: none
+      friendly_name: Main Office Lamp
+      supported_features: 40
+      state: 'on'
+    light.hue_play_office_1:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      mode: normal
+      dynamics: none
+      friendly_name: Hue play office 1
+      supported_features: 40
+      state: 'on'
+    light.hue_play_office_2:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      mode: normal
+      dynamics: none
+      friendly_name: Hue play office 2
+      supported_features: 40
+      state: 'on'
+    switch.wemo_mini_9c0:
+      icon: mdi:track-light
+      friendly_name: Office Background Lights
+      state: 'on'
+    switch.office_integration_01:
+      friendly_name: LED Panel Light
+      state: 'off'
+    switch.stream_light:
+      icon: mdi:track-light
+      friendly_name: Stream Light
+      state: 'off'
+    light.lamp:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP
+      supported_features: 36
+      state: 'on'
+    switch.lamp_nightlight:
+      duration: 60
+      fade: true
+      target_brightness: 0
+      icon: mdi:weather-night
+      friendly_name: LAMP Nightlight
+      state: 'off'
+    switch.lamp_sync_send:
+      udp_port: 21324
+      icon: mdi:upload-network-outline
+      friendly_name: LAMP Sync Send
+      state: 'off'
+    switch.lamp_sync_receive:
+      udp_port: 21324
+      icon: mdi:download-network-outline
+      friendly_name: LAMP Sync Receive
+      state: 'on'
+    light.lamp_segment_1:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 1
+      supported_features: 36
+      state: 'on'
+    light.lamp_master:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 74
+      icon: mdi:lava-lamp
+      friendly_name: LAMP Master
+      supported_features: 32
+      state: 'on'
+    light.lamp_segment_2:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 2
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_3:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 3
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_4:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 4
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_5:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 30
+      - 87.843
+      rgb_color:
+      - 255
+      - 143
+      - 31
+      xy_color:
+      - 0.586
+      - 0.387
+      effect: Solid
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 5
+      supported_features: 36
+      state: 'on'
+    switch.wemo_mini_866:
+      icon: mdi:led-strip-variant
+      friendly_name: Office Desk Underlight
+      state: 'on'
+    switch.office_floor_light:
+      icon: mdi:spotlight-beam
+      friendly_name: Office Floor Light
+      state: 'on'
+    switch.wemo_mini_280:
+      icon: mdi:floor-lamp
+      friendly_name: Basement Light
+      state: 'on'
+    switch.stream_hair_light:
+      friendly_name: Stream Hair Light
+      state: 'off'
+  icon: mdi:office-building
+- id: '1614301471988'
+  name: Dim Office
+  entities:
+    light.main_office_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 36
+      color_temp: 500
+      effect: none
+      friendly_name: Main Office Lamp
+      supported_features: 63
+      state: 'on'
+    light.hue_play_office_1:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 23
+      hs_color:
+      - 66.076
+      - 30.98
+      rgb_color:
+      - 247
+      - 255
+      - 176
+      xy_color:
+      - 0.367
+      - 0.415
+      effect: none
+      friendly_name: Hue play office 1
+      supported_features: 63
+      state: 'on'
+    light.hue_play_office_2:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 18
+      hs_color:
+      - 66.076
+      - 30.98
+      rgb_color:
+      - 247
+      - 255
+      - 176
+      xy_color:
+      - 0.367
+      - 0.415
+      effect: none
+      friendly_name: Hue play office 2
+      supported_features: 63
+      state: 'on'
     light.office_monitor_light:
+      min_mireds: 153
+      max_mireds: 500
       effect_list:
       - blue_fade
       - blue_strobe
@@ -191,20 +2917,2769 @@
       - yellow_fade
       - yellow_strobe
       - random
+      supported_color_modes:
+      - color_temp
+      - hs
+      - rgbw
+      color_mode: rgbw
+      brightness: 23
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      rgbw_color:
+      - 255
+      - 0
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      white_value: 0
       friendly_name: Office Monitor Light
-      max_mireds: 500
-      min_mireds: 153
-      state: 'off'
       supported_features: 151
+      state: 'on'
+    switch.wemo_mini_9c0:
+      friendly_name: Office Background Lights
+      icon: mdi:track-light
+      state: 'off'
+    light.lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 0
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    switch.lamp_nightlight:
+      friendly_name: LAMP Nightlight
+      icon: mdi:weather-night
+      state: unavailable
+    switch.lamp_sync_send:
+      friendly_name: LAMP Sync Send
+      icon: mdi:upload-network-outline
+      state: unavailable
+    switch.lamp_sync_receive:
+      friendly_name: LAMP Sync Receive
+      icon: mdi:download-network-outline
+      state: unavailable
+    light.lamp_segment_1:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 1
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    light.lamp_master:
+      supported_color_modes:
+      - brightness
+      friendly_name: LAMP Master
+      icon: mdi:led-strip-variant
+      supported_features: 33
+      state: unavailable
+    light.lamp_segment_2:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 2
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    light.lamp_segment_3:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 3
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    light.lamp_segment_4:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 4
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    light.lamp_segment_5:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: LAMP Segment 5
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: unavailable
+    switch.office_floor_light:
+      friendly_name: Office Floor Light
+      state: 'off'
     switch.stream_light:
       friendly_name: Stream Light
       icon: mdi:track-light
       state: 'off'
-    switch.wemo_mini_866:
-      friendly_name: Office Desk Underlight
+    switch.office_integration_01:
+      friendly_name: LED Panel Light
+      state: 'off'
+  icon: mdi:brightness-4
+- id: '1614612776199'
+  name: Corner Lamp Accent
+  entities:
+    light.lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 31
+      hs_color:
+      - 223.059
+      - 100
+      rgb_color:
+      - 0
+      - 71
+      - 255
+      xy_color:
+      - 0.137
+      - 0.072
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP
       icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+    switch.lamp_nightlight:
+      duration: 60
+      fade: true
+      target_brightness: 0
+      friendly_name: LAMP Nightlight
+      icon: mdi:weather-night
       state: 'off'
+    switch.lamp_sync_send:
+      udp_port: 21324
+      friendly_name: LAMP Sync Send
+      icon: mdi:upload-network-outline
+      state: 'off'
+    switch.lamp_sync_receive:
+      udp_port: 21324
+      friendly_name: LAMP Sync Receive
+      icon: mdi:download-network-outline
+      state: 'on'
+    light.lamp_segment_1:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 28
+      hs_color:
+      - 223.059
+      - 100
+      rgb_color:
+      - 0
+      - 71
+      - 255
+      xy_color:
+      - 0.137
+      - 0.072
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP Segment 1
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+    light.lamp_master:
+      brightness: 242
+      friendly_name: LAMP Master
+      icon: mdi:led-strip-variant
+      supported_features: 33
+      state: 'on'
+    light.lamp_segment_2:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 33
+      hs_color:
+      - 240
+      - 100
+      rgb_color:
+      - 0
+      - 0
+      - 255
+      xy_color:
+      - 0.136
+      - 0.04
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP Segment 2
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+    light.lamp_segment_3:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 255
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP Segment 3
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+    light.lamp_segment_4:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 255
+      hs_color:
+      - 0
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      xy_color:
+      - 0.701
+      - 0.299
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP Segment 4
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+    light.lamp_segment_5:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      brightness: 87
+      hs_color:
+      - 120
+      - 100
+      rgb_color:
+      - 0
+      - 255
+      - 0
+      xy_color:
+      - 0.172
+      - 0.747
+      effect: Solid
+      intensity: 128
+      palette: Default
+      playlist:
+      preset:
+      reverse: false
+      speed: 128
+      friendly_name: LAMP Segment 5
+      icon: mdi:led-strip-variant
+      supported_features: 55
+      state: 'on'
+  icon: mdi:lamp
+- id: '1615478643953'
+  name: Streaming Scene
+  entities:
+    switch.stream_light:
+      friendly_name: Stream Light
+      state: 'on'
+    light.main_office_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 255
+      hs_color:
+      - 15
+      - 3.137
+      rgb_color:
+      - 255
+      - 249
+      - 247
+      xy_color:
+      - 0.33
+      - 0.33
+      mode: normal
+      dynamics: none
+      friendly_name: Main Office Lamp
+      supported_features: 40
+      state: 'on'
+    switch.office_integration_01:
+      friendly_name: Office Integration 01
+      state: 'on'
+    light.hue_play_office_1:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 255
+      hs_color:
+      - 10.2
+      - 78.431
+      rgb_color:
+      - 255
+      - 89
+      - 55
+      xy_color:
+      - 0.638
+      - 0.325
+      mode: normal
+      dynamics: none
+      friendly_name: Hue play office 1
+      supported_features: 40
+      state: 'on'
+    light.hue_play_office_2:
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 255
+      hs_color:
+      - 12.676
+      - 83.529
+      rgb_color:
+      - 255
+      - 87
+      - 42
+      xy_color:
+      - 0.648
+      - 0.327
+      mode: normal
+      dynamics: none
+      friendly_name: Hue play office 2
+      supported_features: 40
+      state: 'on'
     switch.wemo_mini_9c0:
-      friendly_name: Office Floor Lights
-      icon: mdi:track-light
+      friendly_name: Wemo Mini 9c0
       state: 'off'
+    switch.office_floor_light:
+      friendly_name: Office Floor Light
+      state: 'off'
+    light.lamp:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP
+      supported_features: 36
+      state: 'on'
+    switch.lamp_nightlight:
+      duration: 60
+      fade: true
+      target_brightness: 0
+      icon: mdi:weather-night
+      friendly_name: LAMP Nightlight
+      state: 'off'
+    switch.lamp_sync_send:
+      udp_port: 21324
+      icon: mdi:upload-network-outline
+      friendly_name: LAMP Sync Send
+      state: 'off'
+    switch.lamp_sync_receive:
+      udp_port: 21324
+      icon: mdi:download-network-outline
+      friendly_name: LAMP Sync Receive
+      state: 'on'
+    light.lamp_segment_1:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 1
+      supported_features: 36
+      state: 'on'
+    light.lamp_master:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 255
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Master
+      supported_features: 32
+      state: 'on'
+    light.lamp_segment_2:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 2
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_3:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 3
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_4:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 4
+      supported_features: 36
+      state: 'on'
+    light.lamp_segment_5:
+      effect_list:
+      - Android
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Circus
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Fade
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Merry Christmas
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Police All
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Red & Blue
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running 2
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Chase
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Areas
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      color_mode: rgb
+      brightness: 255
+      hs_color:
+      - 356.941
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 13
+      xy_color:
+      - 0.698
+      - 0.298
+      effect: Breathe
+      icon: mdi:led-strip-variant
+      friendly_name: LAMP Segment 5
+      supported_features: 36
+      state: 'on'
+    select.lamp_preset:
+      options:
+      - Flash-Red
+      - Solid-dim-white
+      - lamp-default
+      icon: mdi:playlist-play
+      friendly_name: LAMP Preset
+      state: Flash-Red
+    select.lamp_playlist:
+      options: []
+      icon: mdi:play-speed
+      friendly_name: LAMP Playlist
+      state: unavailable
+    switch.stream_hair_light:
+      friendly_name: Stream Hair Light
+      state: 'on'
+  icon: mdi:webcam
+- id: '1615508419639'
+  name: Watch Tv
+  entities:
+    light.floor_lamp_one:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 51
+      mode: normal
+      dynamics: none
+      friendly_name: Floor Lamp One
+      supported_features: 40
+      state: 'on'
+    light.floor_lamp_two:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 26
+      mode: normal
+      dynamics: none
+      friendly_name: Floor Lamp Two
+      supported_features: 40
+      state: 'on'
+    light.tv_light:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 51
+      mode: normal
+      dynamics: none
+      friendly_name: TV Light
+      supported_features: 40
+      state: 'on'
+  icon: mdi:television
+- id: '1615508879992'
+  name: Bright room
+  entities:
+    light.floor_lamp_one:
+      brightness: 255
+      friendly_name: Floor Lamp One
+      supported_features: 41
+      state: 'on'
+    light.floor_lamp_two:
+      brightness: 255
+      friendly_name: Floor Lamp Two
+      supported_features: 41
+      state: 'on'
+- id: '1620093020480'
+  name: Lights Out
+  entities:
+    light.floor_lamp_one:
+      supported_color_modes:
+      - brightness
+      friendly_name: Floor Lamp One
+      supported_features: 41
+      state: 'off'
+    light.floor_lamp_two:
+      supported_color_modes:
+      - brightness
+      friendly_name: Floor Lamp Two
+      supported_features: 41
+      state: 'off'
+  icon: mdi:floor-lamp-outline
+- id: '1624541057030'
+  name: Office Eats
+  entities:
+    light.main_office_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 241
+      effect: none
+      friendly_name: Main Office Lamp
+      supported_features: 63
+      state: 'on'
+  icon: mdi:food
+- id: '1646674020397'
+  name: Sunrise Lights
+  entities:
+    switch.wemo186:
+      friendly_name: Bay Window Light
+      state: 'off'
+    switch.sunroom_light:
+      friendly_name: Sunroom Light
+      state: 'off'
+    switch.sunroom_light_led:
+      icon: mdi:led-off
+      friendly_name: Sunroom Light LED
+      state: 'off'
+    switch.garage_light:
+      friendly_name: Garage Light
+      state: 'off'
+  icon: mdi:weather-sunset-up
+- id: '1646674069664'
+  name: Sunset Lights
+  entities:
+    switch.wemo186:
+      friendly_name: Bay Window Light
+      state: 'on'
+    switch.sunroom_light:
+      friendly_name: Sunroom Light
+      state: 'on'
+    switch.sunroom_light_led:
+      icon: mdi:led-on
+      friendly_name: Sunroom Light LED
+      state: 'on'
+    switch.garage_light:
+      friendly_name: Garage Light
+      state: 'on'
+  icon: mdi:weather-sunset-down

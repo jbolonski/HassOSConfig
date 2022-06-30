@@ -1,0 +1,4 @@
+- platform: ping
+  name: Security Server
+  host: !secret ip_security_computer
+  scan_interval: 5

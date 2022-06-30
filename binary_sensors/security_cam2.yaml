@@ -1,0 +1,4 @@
+- platform: ping
+  name: camera 2
+  host: !secret ip_security_cam2
+  scan_interval: 5

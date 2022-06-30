@@ -31,44 +31,42 @@
   alias: Turn on Garage Light
   description: ''
   trigger:
-  - device_id: ee13f1984c984fdaa0dfbbac89d25765
-    domain: binary_sensor
-    entity_id: binary_sensor.ecolink_motion_sensor_sensor
+  - type: turned_on
     platform: device
-    type: turned_on
+    device_id: 230121ff15e2135f2bbab4e025a69712
+    entity_id: binary_sensor.garage_motion_sensor_any
+    domain: binary_sensor
   condition: []
   action:
-  - device_id: 9607f206efeb4409b990015c62cbd9e4
+  - type: turn_on
+    device_id: 0694a5d1b21856272aba2e6dbf1544e9
+    entity_id: switch.garage_light
     domain: switch
-    entity_id: switch.wemo_mini_61
-    type: turn_on
+  mode: single
 - id: '1591457599212'
   alias: Turn Off Garage Light
   description: If the motion is idle then turn off the garage light
   trigger:
-  - device_id: ee13f1984c984fdaa0dfbbac89d25765
-    domain: binary_sensor
-    entity_id: binary_sensor.ecolink_motion_sensor_sensor
-    for:
-      hours: 0
-      minutes: 10
-      seconds: 0
+  - type: turned_off
     platform: device
-    type: turned_off
+    device_id: 230121ff15e2135f2bbab4e025a69712
+    entity_id: binary_sensor.garage_motion_sensor_any
+    domain: binary_sensor
   condition: []
   action:
-  - device_id: 9607f206efeb4409b990015c62cbd9e4
+  - type: turn_off
+    device_id: 0694a5d1b21856272aba2e6dbf1544e9
+    entity_id: switch.garage_light
     domain: switch
-    entity_id: switch.wemo_mini_61
-    type: turn_off
+  mode: single
 - id: '1591493584249'
   alias: 3d Printer Lighting Area On
   description: ''
   trigger:
-  - entity_id: binary_sensor.octopi
-    from: 'off'
+  - entity_id: sensor.ender5plus_current_state
+    from: Unknown
     platform: state
-    to: 'on'
+    to: Operational
   condition: []
   action:
   - brightness_pct: 100
@@ -76,20 +74,22 @@
     domain: light
     entity_id: light.osram_lightify_a19_on_off_dim_a805a000_level_on_off
     type: turn_on
+  mode: single
 - id: '1591493639035'
   alias: 3d Printer Lighting Area Off
   description: ''
   trigger:
-  - entity_id: binary_sensor.octopi
-    from: 'on'
-    platform: state
-    to: 'off'
+  - platform: state
+    to: Unknown
+    entity_id: sensor.ender5plus_current_state
+    from: Operational
   condition: []
   action:
   - device_id: f07bd092736a402c9da115c805b19b06
     domain: light
     entity_id: light.osram_lightify_a19_on_off_dim_a805a000_level_on_off
     type: turn_off
+  mode: single
 - id: '1591695103632'
   alias: Game Room Lighting
   description: Turn on Game Room lighting
@@ -100,7 +100,11 @@
     to: 'on'
   condition: []
   action:
-  - scene: scene.game_room_lights
+  - service: scene.turn_on
+    target:
+      entity_id: scene.work_lighting
+    metadata: {}
+  mode: single
 - id: '1591695199791'
   alias: Gaming Room Lighting Off
   description: Turn off lighting
@@ -109,9 +113,15 @@
     from: 'on'
     platform: state
     to: 'off'
+    for: 00:02:00
   condition: []
   action:
   - scene: scene.game_room_lights_off
+  - device_id: 108893b2bcd2488e8ed93ff0d1a2e17d
+    domain: switch
+    entity_id: switch.office_heater
+    type: turn_off
+  mode: single
 - id: '1591898243025'
   alias: Camera Alert
   description: ''
@@ -128,3 +138,202 @@
     domain: switch
     entity_id: switch.stream_light
     type: toggle
+- id: '1595860487961'
+  alias: Turn on lights when the sun is set
+  description: ''
+  trigger:
+  - event: sunset
+    offset: -00:45:00
+    platform: sun
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.sunset_lights
+    metadata: {}
+  mode: single
+- id: '1595860568540'
+  alias: Turn Off Lights when sun rises
+  description: ''
+  trigger:
+  - event: sunrise
+    offset: '1'
+    platform: sun
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.sunrise_lights
+    metadata: {}
+- id: '1596455836355'
+  alias: Turn on Basement Light On Steps Motion
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 9c0f37dacdcfa03b053ef49b173efbbd
+    entity_id: binary_sensor.basement_steps_motion_sensor_home_security_motion_detection
+    domain: binary_sensor
+  condition: []
+  action:
+  - device_id: 3ecb2a823b4242039ba1cb22f5b43753
+    domain: switch
+    entity_id: switch.wemo_mini_280
+    type: turn_on
+  mode: single
+- id: '1596457349102'
+  alias: Turn off basement light when no motion
+  description: ''
+  trigger:
+  - type: no_motion
+    platform: device
+    device_id: 9c0f37dacdcfa03b053ef49b173efbbd
+    entity_id: binary_sensor.z_wave_motion_sensor_home_security_motion_detection
+    domain: binary_sensor
+  condition:
+  - condition: device
+    device_id: ff92938181c841dc961af7689a1c2a8b
+    domain: light
+    entity_id: light.main_office_lamp
+    type: is_off
+  action:
+  - device_id: 3ecb2a823b4242039ba1cb22f5b43753
+    domain: switch
+    entity_id: switch.wemo_mini_280
+    type: turn_off
+  mode: single
+- id: '1614112006616'
+  alias: Garage Motion Alert
+  description: ''
+  trigger:
+  - type: turned_on
+    platform: device
+    device_id: ee13f1984c984fdaa0dfbbac89d25765
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor
+    domain: binary_sensor
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 9aace5f380679ae65ecbabefa3571550
+    entity_id: light.lamp_master
+    domain: light
+    brightness_pct: 50
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 9aace5f380679ae65ecbabefa3571550
+    entity_id: light.lamp_master
+    domain: light
+  mode: single
+- id: '1628989821947'
+  alias: Dispatch-51
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: dispatch51id
+    id: dispatch51
+  condition: []
+  action:
+  - event: PAGER_DISPATCH
+    event_data:
+      alias: dispatch51.alias
+  mode: single
+- id: '1637163551981'
+  alias: 'Offline Notification: Linux Server '
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.linux_server
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+      milliseconds: 0
+  condition: []
+  action:
+  - service: notify.mobile_notifier
+    data:
+      message: Linux Server Offline
+      title: Outage
+  mode: single
+- id: '1637163715242'
+  alias: 'Offline Notification: Security Server'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.security_server
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: notify.mobile_notifier
+    data:
+      message: Security Server Offline
+  mode: single
+- id: '1637163809022'
+  alias: 'Offline Notification: Garage Pi'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.garage_pi
+    from: 'on'
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+      milliseconds: 0
+  condition: []
+  action:
+  - service: notify.mobile_notifier
+    data:
+      message: Garage Pi Offline
+  mode: single
+- id: '1637515809718'
+  alias: Security Camera Offline Notification
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.camera_1
+    from: 'On'
+    to: 'Off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+      milliseconds: 0
+  - platform: state
+    entity_id: binary_sensor.camera_2
+    from: 'On'
+    to: 'Off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+      milliseconds: 0
+  - platform: state
+    entity_id: binary_sensor.camera_3
+    from: 'On'
+    to: 'Off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+      milliseconds: 0
+  condition: []
+  action:
+  - service: notify.mobile_notifier
+    data:
+      message: 'Security Camera Offline. '
+      title: Offline Alert
+  mode: single

@@ -1,0 +1,11 @@
+  - platform: template
+    sensors:
+      garage_inout_temp_diff:
+        friendly_name: "Garage Temp Diff In/Out"
+        unit_of_measurement: '°F'
+        value_template: "{{ (states('sensor.mobile_temperature')|float)*9/5+32 - state_attr('weather.kptw_hourly','temperature')|float }}"
+      garage_temp:
+        friendly_name: "Garage Temp F"
+        unit_of_measurement: '°F'
+        value_template: "{{(states('sensor.mobile_temperature')|float)*9/5+32}}"
+

@@ -1,0 +1,4 @@
+- platform: ping
+  name: Linux Server
+  host: !secret ip_linux_server
+  scan_interval: 5

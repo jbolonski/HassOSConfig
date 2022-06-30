@@ -1,0 +1,6 @@
+  - platform: template
+    sensors:
+      outdoor_temperature:
+        friendly_name: "Outdoor Temperature"
+        unit_of_measurement: '°F'
+        value_template: "{{ state_attr('weather.kptw_hourly', 'temperature') }}"

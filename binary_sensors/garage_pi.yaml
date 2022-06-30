@@ -1,0 +1,4 @@
+- platform: ping
+  name: Garage Pi
+  host: !secret ip_garage_pi
+  scan_interval: 5

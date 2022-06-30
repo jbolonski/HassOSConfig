@@ -1,0 +1,4 @@
+- platform: ping
+  name: Doorbell Front
+  host: !secret ip_security_doorbell_front
+  scan_interval: 5
